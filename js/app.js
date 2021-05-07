@@ -1,5 +1,6 @@
 'use strict';
 
+//DAY ONE
 // // proof of life
 // console.log('hello world');
 
@@ -109,123 +110,156 @@
 // let guessMyNumber = prompt ('Guess a number between 1 and 100')
 // console.log ('User\s guessed:', guessMyNumber)
 
+//DAY TWO
+// //global arrays
+// let climbingTypesArray = ['LEAD', 'TRAD', 'BOULDERING', 'DEEP WATER SOLO', 'free solo']
+// let favoriteShoeArray = ['5.10', 'MAD ROCK', 'LA SPORTIVA', 'EVOLV', 'SCARPA']
+// let climbingCommunityArray = ['ELI', 'BRIAN', 'TROY']
+// let benefitsArray = ['BALANCE', 'FLEXIBILITY', 'ENDURANCE', 'HAND EYE COORDINATION', 'COMMUNITY']
 
-//global arrays
-let climbingTypesArray = ['LEAD', 'TRAD', 'BOULDERING', 'DEEP WATER SOLO', 'free solo']
-let favoriteShoeArray = ['5.10', 'MAD ROCK', 'LA SPORTIVA', 'EVOLV', 'SCARPA']
-let climbingCommunityArray = ['ELI', 'BRIAN', 'TROY']
-let benefitsArray = ['BALANCE', 'FLEXIBILITY', 'ENDURANCE', 'HAND EYE COORDINATION', 'COMMUNITY']
+// console.log(climbingTypesArray.length);
+// console.log(favoriteShoeArray.length);
+// console.log(climbingCommunityArray.length);
+// console.log(benefitsArray.length);
 
-console.log(climbingTypesArray.length);
-console.log(favoriteShoeArray.length);
-console.log(climbingCommunityArray.length);
-console.log(benefitsArray.length);
+// let numberOfGuesses = 6
+// let theyGuessedRight = false
 
-let numberOfGuesses = 6
-let theyGuessedRight = false
-
-while (numberOfGuesses > 0 && theyGuessedRight === false){
-  //Question One
-  let climbingTypesGuess = prompt ('Name a method of climbing?')
-  console.log(climbingTypesGuess);
+// while (numberOfGuesses > 0 && theyGuessedRight === false){
+//   //Question One
+//   let climbingTypesGuess = prompt ('Name a method of climbing?')
+//   console.log(climbingTypesGuess);
   
-  // lower || uppercase
-  let lowerCaseClimbingTypesGuess = climbingTypesGuess.toLowerCase();
-  let upperCaseClimbingTypesGuess = climbingTypesGuess.toUpperCase();
-  console.log(lowerCaseClimbingTypesGuess);
-  console.log(upperCaseClimbingTypesGuess);
+//   // lower || uppercase
+//   let lowerCaseClimbingTypesGuess = climbingTypesGuess.toLowerCase();
+//   let upperCaseClimbingTypesGuess = climbingTypesGuess.toUpperCase();
+//   console.log(lowerCaseClimbingTypesGuess);
+//   console.log(upperCaseClimbingTypesGuess);
   
-for (let i = 0; i < climbingTypesArray.length; i++) {
-  console.log(climbingTypesArray[i]);
-  if (climbingTypesArray[i] === climbingTypesGuess || climbingTypesArray[i] === lowerCaseClimbingTypesGuess || climbingTypesArray[i] === upperCaseClimbingTypesGuess) {
-    console.log('Correct!');
-    alert('Correct!');
-    theyGuessedRight = true
-    break;
-   }
+// for (let i = 0; i < climbingTypesArray.length; i++) {
+//   console.log(climbingTypesArray[i]);
+//   if (climbingTypesArray[i] === climbingTypesGuess || climbingTypesArray[i] === lowerCaseClimbingTypesGuess || climbingTypesArray[i] === upperCaseClimbingTypesGuess) {
+//     console.log('Correct!');
+//     alert('Correct!');
+//     theyGuessedRight = true
+//     break;
+//    }
+// }
+// if (theyGuessedRight === false)
+//     alert('Sorry, Troy does know now how to ' + climbingTypesGuess);
+
+// //check if they guessed right is still false then you will tell them to try again
+// numberOfGuesses--
+// }
+
+// while (numberOfGuesses > 0 && theyGuessedRight === false){
+//   //Question Two
+//   let favoriteShoeGuess = prompt ('What is one of Troy\s favorite climbing shoe brands?')
+//   console.log(favoriteShoeGuess);
+
+//   // lower || uppercase
+//   let lowerCaseFavoriteShoeGuess = favoriteShoeGuess.toLowerCase();
+//   let upperCaseFavoriteShoeGuess = favoriteShoeGuess.toUpperCase();
+//   console.log(lowerCaseFavoriteShoeGuess);
+//   console.log(upperCaseFavoriteShoeGuess);
+
+// for (let i = 0; i < favoriteShoeArray.length; i++) {
+//   console.log(favoriteShoeArray[i]);
+//   if (favoriteShoeArray[i] === favoriteShoeGuess || favoriteShoeArray[i] === lowerCaseFavoriteShoeGuess || favoriteShoeArray[i] === upperCaseFavoriteShoeGuess) {
+//     console.log('Correct!');
+//     alert('Correct!');
+//     theyGuessedRight = true
+//     break;
+//   }
+// }
+// if (theyGuessedRight === false)
+//     alert('Sorry, Troy has never tried ' + favoriteShoeGuess);
+
+// //check if they guessed right is still false then you will tell them to try again
+// numberOfGuesses--
+// }
+
+// while (numberOfGuesses > 0 && theyGuessedRight === false){
+//   //Question Three
+//   let climbingCommunityGuess = prompt ('Can you name one of Troy\s climbing friends?')
+//   console.log(climbingCommunityGuess);
+
+//   //lower || uppercase
+//   let lowerCaseClimbingCommunityGuess = climbingCommunityGuess.toLowerCase();
+//   let upperCaseClimbingCommunityGuess = climbingCommunityGuess.toUpperCase();
+//   console.log(lowerCaseClimbingCommunityGuess);
+//   console.log(upperCaseClimbingCommunityGuess);
+
+// for (let i = 0; i < climbingCommunityArray.length; i++) {
+//   console.log(climbingCommunityArray[i]);
+//   if (climbingCommunityArray[i] && climbingCommunityGuess === climbingCommunityArray[i] === lowerCaseClimbingCommunityGuess || climbingCommunityArray[i] === upperCaseClimbingCommunityGuess) {
+//     console.log('Troy loves meeting new climbers of any level!');
+//     alert('Correct!');
+//     theyGuessedRight = true
+//     break;
+//   }
+// }
+// if (theyGuessedRight === false)
+//     alert('Troy has never met ' + climbingCommunityGuess);
+
+// numberOfGuesses--
+// }
+
+// while (numberOfGuesses > 0 && theyGuessedRight === false){
+//   //Question Four
+//   let benefitsGuess = prompt ('Name one benefit Troy receives from climbing!')
+//   console.log(benefitsGuess);
+
+//   //lower || uppercase
+//   let lowerCaseBenefitsGuess = benefitsGuess.toLowerCase();
+//   let upperCaseBenefitsGuess = benefitsGuess.toUpperCase();
+//   console.log(lowerCaseBenefitsGuess);
+//   console.log(upperCaseBenefitsGuess);
+
+// for (let i = 0; i < benefitsArray.length; i++) {
+//   console.log(benefitsArray[i]);
+//   if (benefitsArray[i] === benefitsGuess || benefitsArray[i] === lowerCaseBenefitsGuess || benefitsArray[i] === upperCaseBenefitsGuess) {
+//     console.log('A safe climber is a healthy one!');
+//     alert('Correct!');
+//     theyGuessedRight = true
+//     break;
+//   }
+// }
+// if (theyGuessedRight === false)
+//     alert('Nice! I didn\t think of ' + benefitsGuess);
+
+// numberOfGuesses--
+// }
+//DAY THREE 
+
+'use strict';
+
+console.log('Hello World!');
+
+//get userName
+alert('Welcome User!');
+let userName = prompt('What\s your name?');
+console.log ('userName =', userName);
+
+//confirm username
+let userNameTrue = prompt ('I\m sorry, my head hurts! I think I misspelled your name. ' + userName + ' was it?');
+console.log ('userName is real =', userNameTrue);
+alert('How are yah? ' + userName + '! Check this out! :]');
+
+if (userName === ('') || userName === (null)){
+  console.log(userName + ' is a ghost');
+  alert('You are not a ghost!') ;
 }
-if (theyGuessedRight === false)
-    alert('Sorry, Troy does know now how to ' + climbingTypesGuess);
-
-//check if they guessed right is still false then you will tell them to try again
-numberOfGuesses--
+if (userName == userNameTrue  || userNameTrue == 'yes' || userNameTrue == 'YES'){
+  console.log('userName === userNameTrue');
+  alert( userName + ' has been granted Entry!');
+} else if (userName !== userNameTrue || userNameTrue == 'no' || userNameTrue == 'NO') {
+  console.log (userName + ' GHOST ALERT!');
 }
-
-while (numberOfGuesses > 0 && theyGuessedRight === false){
-  //Question Two
-  let favoriteShoeGuess = prompt ('What is one of Troy\s favorite climbing shoe brands?')
-  console.log(favoriteShoeGuess);
-
-  // lower || uppercase
-  let lowerCaseFavoriteShoeGuess = favoriteShoeGuess.toLowerCase();
-  let upperCaseFavoriteShoeGuess = favoriteShoeGuess.toUpperCase();
-  console.log(lowerCaseFavoriteShoeGuess);
-  console.log(upperCaseFavoriteShoeGuess);
-
-for (let i = 0; i < favoriteShoeArray.length; i++) {
-  console.log(favoriteShoeArray[i]);
-  if (favoriteShoeArray[i] === favoriteShoeGuess || favoriteShoeArray[i] === lowerCaseFavoriteShoeGuess || favoriteShoeArray[i] === upperCaseFavoriteShoeGuess) {
-    console.log('Correct!');
-    alert('Correct!');
-    theyGuessedRight = true
-    break;
+function userNameConfirm(){
+  while (userName !== userNameTrue && userNameTrue !== 'yes' && userNameTrue !== 'YES' ) {
+    userName = prompt 
+    alert('you shal not pass!')
   }
 }
-if (theyGuessedRight === false)
-    alert('Sorry, Troy has never tried ' + favoriteShoeGuess);
-
-//check if they guessed right is still false then you will tell them to try again
-numberOfGuesses--
-}
-
-while (numberOfGuesses > 0 && theyGuessedRight === false){
-  //Question Three
-  let climbingCommunityGuess = prompt ('Can you name one of Troy\s climbing friends?')
-  console.log(climbingCommunityGuess);
-
-  //lower || uppercase
-  let lowerCaseClimbingCommunityGuess = climbingCommunityGuess.toLowerCase();
-  let upperCaseClimbingCommunityGuess = climbingCommunityGuess.toUpperCase();
-  console.log(lowerCaseClimbingCommunityGuess);
-  console.log(upperCaseClimbingCommunityGuess);
-
-for (let i = 0; i < climbingCommunityArray.length; i++) {
-  console.log(climbingCommunityArray[i]);
-  if (climbingCommunityArray[i] && climbingCommunityGuess === climbingCommunityArray[i] === lowerCaseClimbingCommunityGuess || climbingCommunityArray[i] === upperCaseClimbingCommunityGuess) {
-    console.log('Troy loves meeting new climbers of any level!');
-    alert('Correct!');
-    theyGuessedRight = true
-    break;
-  }
-}
-if (theyGuessedRight === false)
-    alert('Troy has never met ' + climbingCommunityGuess);
-
-numberOfGuesses--
-}
-
-while (numberOfGuesses > 0 && theyGuessedRight === false){
-  //Question Four
-  let benefitsGuess = prompt ('Name one benefit Troy receives from climbing!')
-  console.log(benefitsGuess);
-
-  //lower || uppercase
-  let lowerCaseBenefitsGuess = benefitsGuess.toLowerCase();
-  let upperCaseBenefitsGuess = benefitsGuess.toUpperCase();
-  console.log(lowerCaseBenefitsGuess);
-  console.log(upperCaseBenefitsGuess);
-
-for (let i = 0; i < benefitsArray.length; i++) {
-  console.log(benefitsArray[i]);
-  if (benefitsArray[i] === benefitsGuess || benefitsArray[i] === lowerCaseBenefitsGuess || benefitsArray[i] === upperCaseBenefitsGuess) {
-    console.log('A safe climber is a healthy one!');
-    alert('Correct!');
-    theyGuessedRight = true
-    break;
-  }
-}
-if (theyGuessedRight === false)
-    alert('Nice! I didn\t think of ' + benefitsGuess);
-
-numberOfGuesses--
-}
+userNameConfirm();
